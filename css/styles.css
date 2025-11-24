@@ -1,0 +1,205 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color (Ethiopian Green) */
+  --clr-primary-1: hsl(149, 70%, 14%);
+  --clr-primary-2: hsl(149, 60%, 20%);
+  --clr-primary-3: hsl(149, 55%, 26%);
+  --clr-primary-4: hsl(149, 50%, 32%);
+
+  /* primary/main color */
+  --clr-primary-5: hsl(149, 45%, 38%);
+
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(149, 45%, 48%);
+  --clr-primary-7: hsl(149, 55%, 60%);
+  --clr-primary-8: hsl(149, 65%, 75%);
+  --clr-primary-9: hsl(149, 80%, 88%);
+  --clr-primary-10: hsl(149, 100%, 96%);
+
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(210, 20%, 12%);
+  --clr-grey-2: hsl(210, 18%, 20%);
+  --clr-grey-3: hsl(210, 16%, 28%);
+  --clr-grey-4: hsl(210, 14%, 36%);
+
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 12%, 46%);
+  --clr-grey-6: hsl(210, 12%, 60%);
+
+  /* lighter greys (borders, backgrounds, sections) */
+  --clr-grey-7: hsl(210, 14%, 72%);
+  --clr-grey-8: hsl(210, 18%, 82%);
+  --clr-grey-9: hsl(210, 22%, 90%);
+  --clr-grey-10: hsl(210, 30%, 96%);
+
+  --clr-white: #fff;
+  --ff-primary: 'Lato', sans-serif;
+  /* --ff-secondary: 'Grand Hotel', cursive; */
+  --transition: all 0.3s linear;
+  --ltr-spacing: 0.25rem;
+  --radius: 0.5rem;
+   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*
+=============== 
+Global styles
+===============
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-white);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+/* img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+} */
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--ltr-spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+/* more global css */
+
+.btn {
+  padding: 0.375rem 0.75rem;
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  text-transform: uppercase;
+  letter-spacing: var(--ltr-spacing);
+  display: inline-block;
+  /* font-weight: 700; */
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    color: var(--clr-primary-1);
+  background: var(--clr-primary-8);
+}
+
+/*
+=============== 
+Navbar
+===============
+*/
+/*
+=============== 
+Hero
+===============
+*/
+/*
+=============== 
+About
+===============
+*/
+/* section add to globals */
+/* title add to globals */
+/* section center add to globals */
+
+/*
+=============== 
+Services
+===============
+*/
+
+/*
+=============== 
+Featured Tours
+===============
+*/
+
+/*
+=============== 
+Contact
+===============
+*/
+
+/*
+=============== 
+Gallery
+===============
+*/
+
+/*
+=============== 
+Footer
+===============
+*/
+
