@@ -66,18 +66,22 @@ body {
   font-size: 0.875rem;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
-/* img:not(.nav-logo) {
+/* img {
   width: 100%;
   display: block;
 } */
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
 
 h1,
 h2,
@@ -188,6 +192,148 @@ p {
 Navbar
 ===============
 */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--dark-shadow);
+  z-index: 2;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.nav-logo {
+  display: block;
+  width: 12rem;
+}
+
+.nav-toggle {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  background: transparent;
+  border: transparent;
+  transition: var(--transition);
+}
+
+.nav-toggle:hover {
+  transform: scale(1.2);
+}
+
+.nav-icons {
+  display: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--clr-grey-1);
+  letter-spacing: var(--ltr-spacing);
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  padding-left: 3.5rem;
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-1);
+}
+
+/**** for hide the nav-links ****/
+
+/* .nav-links {
+  display: none;
+  transition: var(--transition);
+}
+
+.showNavLinks {
+  display: block;
+} */
+
+/* **** or use height at 280px ***** */
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.showNavLinks {
+  height: 280px;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  .nav-logo {
+    width: 11rem;
+  }
+
+  .nav-links {
+    height: auto;
+    display: flex;
+    gap: 0 1rem;
+  }
+
+  .nav-link {
+    padding: 0;
+  }
+
+  .nav-link:hover {
+    background: transparent;
+    padding: 0;
+    color: var(--clr-primary-5);
+  }
+
+  .nav-icons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-icon {
+    display: block;
+    color: var(--clr-primary-5);
+    font-size: 1.2rem;
+    transition: var(--transition);
+  }
+
+  .nav-icon:hover {
+    color: var(--clr-primary-8);
+    transform: scale(1.225);
+  }
+}
+
 /*
 =============== 
 Hero
@@ -604,7 +750,8 @@ Footer
   text-align: center;
 }
 
-.footer-links, .footer-icons {
+.footer-links,
+.footer-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
