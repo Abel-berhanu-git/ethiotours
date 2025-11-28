@@ -787,3 +787,14 @@ Footer
   text-transform: capitalize;
   letter-spacing: var(--ltr-spacing);
 }
+
+.creator {
+  color: var(--clr-white);
+  letter-spacing: var(--ltr-spacing);
+  text-transform: capitalize;
+}
+
+.creator span {
+  color: var(--clr-primary-5);
+  text-transform: uppercase;
+}
