@@ -7,16 +7,34 @@ date.innerHTML = new Date().getFullYear();
 // ****** nav toggle ******
 
 const navBtn = document.getElementById('nav-toggle');
-const navLinks = document.getElementById('nav-links');
+const links = document.getElementById('nav-links');
 
 // console.log(navBtn)
-// console.log(navLinks)
+// console.log(links)
 
 navBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('showNavLinks')
+  links.classList.toggle('show-nav-links')
 })
 
-// navBtn.addEventListener('click', () => {
-//   navLinks.classList.remove('showNavLinks')
-// })
+// ********** smooth scroll ************
+// select links
+const scrollLinks = document.querySelectorAll(".scroll-link");
+scrollLinks.forEach(link => {
+  link.addEventListener("click", e => {
+    // prevent default
+    e.preventDefault();
+    links.classList.remove("show-nav-links");
 
+    const id = e.target.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+    //
+    let position = element.offsetTop - 62;
+
+    window.scrollTo({
+      left: 0,
+      // top: element.offsetTop,
+      top: position,
+      behavior: "smooth"
+    });
+  });
+});

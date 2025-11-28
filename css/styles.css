@@ -262,7 +262,7 @@ Navbar
   transition: var(--transition);
 }
 
-.showNavLinks {
+.show-nav-links {
   display: block;
 } */
 
@@ -274,7 +274,7 @@ Navbar
   transition: var(--transition);
 }
 
-.showNavLinks {
+.show-nav-links {
   height: 280px;
 }
 
