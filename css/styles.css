@@ -648,6 +648,7 @@ Contact
   text-transform: capitalize;
   letter-spacing: var(--ltr-spacing);
   border: transparent;
+  overflow: hidden;
 }
 
 .form-control::placeholder {
