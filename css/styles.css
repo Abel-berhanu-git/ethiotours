@@ -651,6 +651,10 @@ Contact
   overflow: hidden;
 }
 
+.submit-btn {
+  padding: 0.375rem 0.25rem;
+}
+
 .form-control::placeholder {
   color: inherit;
 }
