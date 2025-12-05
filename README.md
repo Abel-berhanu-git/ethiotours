@@ -8,7 +8,7 @@ It is built using **HTML, CSS, and JavaScript** and deployed on **Netlify**.
 ## 🚀 Live Demo
 
 👉 **Visit the live website:**  
-🌍 Live Site: https://ethiotours.netlify.app
+🌍 Live Site: <a href="https://ethiotours.netlify.app" target="_blank">https://ethiotours.netlify.app</a>
 
 ---
 
@@ -34,4 +34,4 @@ It is built using **HTML, CSS, and JavaScript** and deployed on **Netlify**.
 ## 👤 Author
 
 **Abel Berhanu**  
-💼 GitHub: https://github.com/Abel-berhanu-git  
+💼 GitHub: <a href="https://github.com/Abel-berhanu-git" target="_blank">https://github.com/Abel-berhanu-git</a>  
